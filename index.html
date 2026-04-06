@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmad Aljomaa | Professionelles Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#0f172a,#020617);
+color:#fff;
+scroll-behavior:smooth;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+header h1{
+font-size:60px;
+background: linear-gradient(90deg,#22c55e,#6366f1);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+header p{
+margin-top:15px;
+font-size:20px;
+opacity:0.8;
+}
+
+.btn{
+margin-top:25px;
+padding:12px 25px;
+border:none;
+border-radius:10px;
+background:#22c55e;
+color:#fff;
+cursor:pointer;
+font-size:16px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+section{
+margin:70px 0;
+opacity:0;
+transform:translateY(40px);
+transition:0.6s;
+}
+
+section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+h2{
+margin-bottom:15px;
+border-left:5px solid #22c55e;
+padding-left:10px;
+}
+
+.card{
+background: rgba(255,255,255,0.05);
+backdrop-filter: blur(12px);
+padding:20px;
+margin-bottom:15px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+background: rgba(255,255,255,0.1);
+}
+
+.skills span{
+display:inline-block;
+background:#22c55e;
+padding:8px 14px;
+margin:5px;
+border-radius:20px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+}
+
+.light{
+background:#f1f5f9;
+color:#000;
+}
+
+.light .card{
+background:#fff;
+color:#000;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Ahmad Aljomaa</h1>
+<p>Motivierter Mitarbeiter | Zuverlässig | Teamfähig</p>
+<button class="btn" onclick="toggleMode()">🌙 Modus wechseln</button>
+</header>
+
+<div class="container">
+
+<section>
+<h2>👤 Über mich</h2>
+<div class="card">
+<p>
+Ich bin ein motivierter und zuverlässiger Mitarbeiter mit vielseitiger Berufserfahrung in den Bereichen Logistik, Kundenservice und Auslieferung. 
+Durch meine bisherigen Tätigkeiten habe ich gelernt, flexibel zu arbeiten, Verantwortung zu übernehmen und auch unter Druck effizient zu bleiben.
+</p>
+
+<br>
+
+<p>
+Ich arbeite strukturiert, bin pünktlich und lege großen Wert auf Teamarbeit sowie einen respektvollen Umgang mit Kunden und Kollegen. 
+Meine schnelle Auffassungsgabe hilft mir, mich schnell in neue Aufgaben einzuarbeiten.
+</p>
+
+<br>
+
+<p>
+Aktuell interessiere ich mich besonders für den Bereich Webentwicklung und erweitere kontinuierlich meine Kenntnisse in HTML, CSS und JavaScript.
+</p>
+</div>
+</section>
+
+<section>
+<h2>📞 Kontaktdaten</h2>
+<div class="card">
+<p>📍 Hamburg, Deutschland</p>
+<p>📱 +49 178 7142213</p>
+<p>✉️ ahmad.aljomaa@gmx.de</p>
+</div>
+</section>
+
+<section>
+<h2>💼 Berufserfahrung</h2>
+
+<div class="card">Amazon – Paketzusteller (2024 - heute)</div>
+<div class="card">Voi E-Scooter – Kurierfahrer (2024)</div>
+<div class="card">Süderelbe Kurier – Kurierfahrer (2023 - 2024)</div>
+<div class="card">GLS – Auslieferfahrer (2022 - 2023)</div>
+<div class="card">HelloFresh – Fahrer (2021 - 2022)</div>
+<div class="card">Row Jeans – Verkäufer & Kundenberater (2019 - 2021)</div>
+
+</section>
+
+<section>
+<h2>🎓 Ausbildung</h2>
+<div class="card">Mittlerer Schulabschluss – Hamburg</div>
+<div class="card">Gymnasium – Syrien</div>
+<div class="card">Ausbildung Bauzeichner (ohne Abschluss)</div>
+</section>
+
+<section>
+<h2>🛠 Praktika</h2>
+<div class="card">Elektro Sachgau – Elektriker</div>
+<div class="card">Mobilcom-Debitel – Verkäufer</div>
+<div class="card">Kita St. Petrus – Erzieher</div>
+<div class="card">Row Jeans – Verkäufer</div>
+<div class="card">Mobile Select – Verkäufer</div>
+</section>
+
+<section>
+<h2>💻 Fähigkeiten</h2>
+<div class="skills">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Microsoft Office</span>
+</div>
+</section>
+
+<section>
+<h2>🌍 Sprachen</h2>
+<div class="card">Arabisch – Muttersprache</div>
+<div class="card">Deutsch – B2</div>
+<div class="card">Englisch – Grundkenntnisse</div>
+</section>
+
+<section>
+<h2>🚗 Führerschein</h2>
+<div class="card">Klasse B</div>
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Ahmad Aljomaa</p>
+</footer>
+
+<script>
+function toggleMode(){
+document.body.classList.toggle("light");
+}
+
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", ()=>{
+sections.forEach(sec=>{
+const top = window.scrollY;
+const offset = sec.offsetTop - 400;
+
+if(top > offset){
+sec.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>
